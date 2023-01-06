@@ -1,0 +1,288 @@
+.main {
+  .clients {
+    background: rgba(242, 247, 255, 0.5);
+    .container {
+      padding-bottom: 124px;
+      .clients_tirnoq {
+        display: flex;
+        column-gap: 220px;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 7px;
+        h1 {
+          font-weight: 800;
+          font-size: 46px;
+          line-height: 64px;
+          color: #1d2530;
+        }
+      }
+      .clients_row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        .clients_card_parent {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .clients_card::after {
+            position: absolute;
+            top: 100%;
+            left: 47%;
+            content: "";
+            width: 24px;
+            height: 14px;
+            background-color: white;
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+            box-shadow: 0px 0px 15px #ccc;
+          }
+          .clients_card {
+            position: relative;
+            padding: 32px 32px 56px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 28px;
+            box-shadow: 0px 0px 15px #ccc;
+            h3 {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 28px;
+              text-align: center;
+              color: #18191f;
+              margin-bottom: 8px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              text-align: center;
+              color: #18191f;
+            }
+          }
+          .clients_img {
+            display: flex;
+            column-gap: 16px;
+            .clients_title {
+              h2 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                color: #1d2530;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #1d2530;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1109px) {
+  .main {
+    .clients {
+      background: rgba(242, 247, 255, 0.5);
+      .container {
+        padding: 40px 40px 88px;
+        .clients_tirnoq {
+          display: flex;
+          column-gap: 143px;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 7px;
+          h1 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            color: #1d2530;
+          }
+          img {
+            width: 111px;
+            height: 95px;
+          }
+        }
+        .clients_row {
+          margin: 0px auto;
+          display: flex;
+          justify-content: space-between;
+          column-gap: 30px;
+          overflow-x: scroll;
+          width: 700px;
+          white-space: nowrap;
+          box-shadow: 0px 0px 10px #ccc;
+          padding: 10px;
+          .clients_card_parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .clients_card::after {
+              position: absolute;
+              top: 100%;
+              left: 47%;
+              content: "";
+              width: 24px;
+              height: 14px;
+              background-color: white;
+              clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+              box-shadow: 0px 0px 15px #ccc;
+            }
+            .clients_card {
+              position: relative;
+              padding: 32px 32px 56px;
+              background: white;
+              border-radius: 6px;
+              margin-bottom: 28px;
+              box-shadow: 0px 0px 15px #ccc;
+              h3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: #18191f;
+                margin-bottom: 8px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: #18191f;
+                white-space: pre;
+              }
+            }
+            .clients_img {
+              display: flex;
+              column-gap: 16px;
+              padding-bottom: 20px;
+              .clients_title {
+                h2 {
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 28px;
+                  color: #1d2530;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: #1d2530;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .main {
+    .clients {
+      background: rgba(242, 247, 255, 0.5);
+      .container {
+        padding: 16px 22px 88px;
+        .clients_tirnoq {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 40px;
+          h1 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            color: #1d2530;
+            order: 2;
+          }
+          .clients_tirnoq_img {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            img {
+              width: 53px;
+              height: 46px;
+              order: 1;
+            }
+          }
+        }
+        .clients_row {
+          margin: 0px auto;
+          display: flex;
+          justify-content: space-between;
+          column-gap: 30px;
+          overflow-x: scroll;
+          width: 310px;
+          white-space: nowrap;
+          box-shadow: 0px 0px 10px #ccc;
+          padding: 10px;
+          .clients_card_parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .clients_card::after {
+              position: absolute;
+              top: 100%;
+              left: 47%;
+              content: "";
+              width: 24px;
+              height: 14px;
+              background-color: white;
+              clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+              box-shadow: 0px 0px 15px #ccc;
+            }
+            .clients_card {
+              position: relative;
+              padding: 32px 20px 46px;
+              background: white;
+              border-radius: 6px;
+              margin-bottom: 28px;
+              box-shadow: 0px 0px 15px #ccc;
+              width: 270px;
+              h3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: #18191f;
+                margin-bottom: 8px;
+                overflow: hidden;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: #18191f;
+                // white-space: pre;
+                overflow: hidden;
+              }
+            }
+            .clients_img {
+              display: flex;
+              column-gap: 16px;
+              padding-bottom: 20px;
+              .clients_title {
+                h2 {
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 28px;
+                  color: #1d2530;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: #1d2530;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

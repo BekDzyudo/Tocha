@@ -1,0 +1,177 @@
+.main {
+  .tocha_online {
+    background: rgba(242, 247, 255, 0.5);
+    .container {
+      .online_container {
+        display: flex;
+        column-gap: 80px;
+        padding: 100px 0px 70px;
+        .tocha_online-title {
+          max-width: 520px;
+          h1 {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 32px;
+            color: #1d2530;
+            margin-bottom: 68px;
+          }
+          .tocha_online-row {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            .tocha_online-card {
+              display: flex;
+              column-gap: 28px;
+              align-items: center;
+              img {
+                width: 68px;
+                height: 68px;
+              }
+              .card-title {
+                h2 {
+                  font-weight: 500;
+                  font-size: 24px;
+                  line-height: 32px;
+                  color: #1d2530;
+                  margin-bottom: 8px;
+                }
+                p {
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 26px;
+                  color: #1d2530;
+                }
+              }
+            }
+          }
+        }
+        .tocha_online_img {
+          max-width: 411px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1109px) {
+  .main {
+    .tocha_online {
+      .container {
+        padding: 0px 40px;
+        .online_container {
+          column-gap: 10px;
+          padding: 60px 0px;
+          .tocha_online-title {
+            max-width: 380px;
+            h1 {
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 40px;
+              color: #1d2530;
+              margin-bottom: 40px;
+            }
+            .tocha_online-row {
+              display: flex;
+              flex-direction: column;
+              row-gap: 16px;
+              .tocha_online-card {
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+                img {
+                  width: 38px;
+                  height: 38px;
+                }
+                .card-title {
+                  h2 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #1d2530;
+                    margin-bottom: 4px;
+                  }
+                  p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #1d2530;
+                  }
+                }
+              }
+            }
+          }
+          .tocha_online_img {
+            max-width: 300px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .main {
+    .tocha_online {
+      .container {
+        padding: 0px 22px;
+        .online_container {
+          row-gap: 25px;
+          padding: 60px 0px;
+          flex-direction: column;
+          align-items: center;
+          .tocha_online-title {
+            max-width: 380px;
+            h1 {
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 40px;
+              color: #1d2530;
+              margin-bottom: 40px;
+            }
+            .tocha_online-row {
+              display: flex;
+              flex-direction: column;
+              row-gap: 16px;
+              .tocha_online-card {
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+                img {
+                  width: 38px;
+                  height: 38px;
+                }
+                .card-title {
+                  h2 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #1d2530;
+                    margin-bottom: 4px;
+                  }
+                  p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #1d2530;
+                  }
+                }
+              }
+            }
+          }
+          .tocha_online_img {
+            max-width: 300px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

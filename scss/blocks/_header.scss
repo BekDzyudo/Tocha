@@ -1,0 +1,344 @@
+.header {
+  background-image: url(../../images/BG_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0px 16px;
+      margin-bottom: 95px;
+      // =================================================
+      background: white;
+      width: 100%;
+      box-shadow: 0px 2px 10px #ccc;
+      position: fixed;
+      top: 0;
+      left: 0;
+      // =================================================
+      z-index: 100;
+      .logo {
+        margin-left: 200px; //==========================
+        a {
+          display: flex;
+          border: none;
+          outline: none;
+          img:nth-child(1) {
+            width: 55px;
+            height: 40px;
+          }
+        }
+      }
+      .header_btn {
+        display: flex;
+        column-gap: 12px;
+        margin-right: 208px; //==========================
+        button:nth-child(1) {
+          width: 76px;
+          height: 40px;
+          background: #f1e4ff;
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          border: none;
+          color: $btn_normal_color;
+          cursor: pointer;
+          &:hover {
+            background-color: $btn_hover_color;
+          }
+          &:active {
+            background-color: $btn_active_color;
+          }
+        }
+        button:nth-child(2) {
+          width: 138px;
+          height: 40px;
+          background: $btn_normal_color;
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            background-color: $btn_hover_color;
+          }
+          &:active {
+            background-color: $btn_active_color;
+          }
+        }
+      }
+      .nav_menu {
+        display: none;
+        .nav_menu_dropdown {
+          display: none;
+        }
+      }
+    }
+    .header_title_parent {
+      background-image: url(../../images/header_bg.png);
+      background-repeat: no-repeat;
+      background-position-x: 363px;
+      // padding-top: 150px; //======================================
+      margin-top: 150px; //==================================
+      .header_mobile_img {
+        display: none;
+      }
+      .header_title {
+        max-width: 482px;
+        padding-bottom: 285px;
+        h1 {
+          font-weight: 800;
+          font-size: 50px;
+          line-height: 60px;
+          color: $btn_normal_color;
+          margin-bottom: 24px;
+          padding-top: 30px;
+          span {
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 60px;
+            color: black;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 34px;
+          color: #1d2530;
+          margin-bottom: 32px;
+          span {
+            color: $btn_normal_color;
+            font-weight: 700;
+          }
+        }
+        button {
+          width: 168px;
+          height: 48px;
+          background: $btn_normal_color;
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+          border-radius: 6px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          position: relative;
+          &:hover {
+            background-color: $btn_hover_color;
+            border-radius: 6px;
+          }
+          &:active {
+            background-color: $btn_active_color;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1109px) {
+  .header {
+    .container {
+      padding: 0px 40px;
+      nav {
+        padding: 12px 0px 12px;
+        .logo {
+          margin-left: 40px;
+        }
+        .header_btn {
+          margin-right: 40px;
+        }
+      }
+      .header_title_parent {
+        background-image: url(../../images/header_bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        .header_title {
+          max-width: 270px;
+          padding-bottom: 73px;
+          h1 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            color: $btn_normal_color;
+            margin-bottom: 32px;
+            span {
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 40px;
+              color: black;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #1d2530;
+            margin-bottom: 32px;
+            span {
+              color: $btn_normal_color;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .header {
+    .container {
+      padding: 0px 22px;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+        padding: 16px 0px 16px;
+        .logo {
+          width: 95px;
+          height: 30px;
+          margin-left: 22px;
+          img {
+            width: 100%;
+          }
+        }
+        .header_btn {
+          display: none;
+        }
+        .nav_menu_dropdown {
+          display: none;
+          position: absolute;
+          right: 0;
+          width: 200px;
+          height: auto;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          row-gap: 32px;
+          padding: 15px;
+          box-shadow: 0px 0px 5px black;
+          .dropdown_close_link {
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+            img {
+              width: 28px;
+              height: 28px;
+            }
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            padding-bottom: 42px;
+            padding-left: 30px;
+            li {
+              a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1d2530;
+              }
+            }
+          }
+        }
+        .nav_menu {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          margin-right: 22px;
+          &:hover {
+            .nav_menu_dropdown {
+              display: block;
+            }
+          }
+        }
+      }
+      .header_title_parent {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header_mobile_img {
+          display: block;
+          max-width: 330px;
+          img {
+            width: 100%;
+          }
+        }
+        .header_title {
+          max-width: 482px;
+          padding-bottom: 48px;
+          h1 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 40px;
+            color: $btn_normal_color;
+            margin-bottom: 32px;
+            padding-top: 30px;
+            span {
+              font-weight: 800;
+              font-size: 32px;
+              line-height: 40px;
+              color: black;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #1d2530;
+            margin-bottom: 32px;
+            span {
+              color: $btn_normal_color;
+              font-weight: 700;
+            }
+          }
+          button {
+            width: 168px;
+            height: 48px;
+            background: $btn_normal_color;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+            border-radius: 6px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+            position: relative;
+            &:hover {
+              background-color: $btn_hover_color;
+              border-radius: 6px;
+            }
+            &:active {
+              background-color: $btn_active_color;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
